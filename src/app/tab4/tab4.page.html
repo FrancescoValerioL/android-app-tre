@@ -1,0 +1,107 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Calcolatrice</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>{{stringInserita}}</ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="tertiary" expand="block" (click)="addNumber('1')"
+          >1</ion-button
+        >
+      </ion-col>
+      <ion-col>
+        <ion-button color="tertiary" expand="block" (click)="addNumber('2')"
+          >2</ion-button
+        >
+      </ion-col>
+      <ion-col>
+        <ion-button color="tertiary" expand="block" (click)="addNumber('3')"
+          >3</ion-button
+        >
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="tertiary" expand="block" (click)="addNumber('4')"
+          >4</ion-button
+        >
+      </ion-col>
+      <ion-col>
+        <ion-button color="tertiary" expand="block" (click)="addNumber('5')"
+          >5</ion-button
+        >
+      </ion-col>
+      <ion-col>
+        <ion-button color="tertiary" expand="block" (click)="addNumber('6')"
+          >6</ion-button
+        >
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="tertiary" expand="block" (click)="addNumber('7')"
+          >7</ion-button
+        >
+      </ion-col>
+      <ion-col>
+        <ion-button color="tertiary" expand="block" (click)="addNumber('8')"
+          >8</ion-button
+        >
+      </ion-col>
+      <ion-col>
+        <ion-button color="tertiary" expand="block" (click)="addNumber('9')"
+          >9</ion-button
+        >
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="tertiary" expand="block" (click)="addNumber('0')"
+          >0</ion-button
+        >
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="tertiary" expand="block" (click)="ottieniRisultato()"
+          >=</ion-button
+        >
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="tertiary" expand="block" (click)="addOperator('+')"
+          >+</ion-button
+        >
+      </ion-col>
+      <ion-col>
+        <ion-button color="tertiary" expand="block" (click)="addOperator('-')"
+          >-</ion-button
+        >
+      </ion-col>
+      <ion-col>
+        <ion-button color="tertiary" expand="block" (click)="addOperator('*')"
+          >*</ion-button
+        >
+      </ion-col>
+      <ion-col>
+        <ion-button color="tertiary" expand="block" (click)="addOperator('/')"
+          >/</ion-button
+        >
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item> {{risultato}} </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
